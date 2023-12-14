@@ -6,10 +6,10 @@ function solicitarNome() {
 
 var nomeAluno = solicitarNome(); 
 
-var notaMatematica = Number(prompt("Qual foi sua nota em Matemática?"));
-var notaLinguagens = Number(prompt("Qual foi sua nota em Linguagens?"));
-var notaNatureza = Number(prompt("Qual foi sua nota em Ciências da Natureza?"));
-var notaHumanas = Number(prompt("Qual foi sua nota em Humanas?"));
+var notaMatematica = parseFloat(prompt("Qual foi sua nota em Matemática?"));
+var notaLinguagens = parseFloat(prompt("Qual foi sua nota em Linguagens?"));
+var notaNatureza = parseFloat(prompt("Qual foi sua nota em Ciências da Natureza?"));
+var notaHumanas = parseFloat(prompt("Qual foi sua nota em Humanas?"));
 
 var calcularMedia = (notaMatematica, notaLinguagens, notaNatureza, notaHumanas) => 
   (notaMatematica + notaLinguagens + notaNatureza + notaHumanas) / 4;
